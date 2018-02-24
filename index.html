@@ -8,10 +8,12 @@
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+  <main>
   <h1>UI Challenge - Custom Form Elements</h1>
   <form action="">
     <label for="text-input">text input</label>
-    <input type="text" placeholder="placeholder text">
+    <input type="text" required placeholder="placeholder text">
+    <p class="error-msg">please enter a valid username</p>
 
     <label for="select-box">select box</label>
     <select name="select-box" id="select-box">
@@ -33,7 +35,8 @@
 <label for="radio" class="use-sprite"><div></div></label>
 
 <label>button</label>
-<button id="button">submit</button>
+<button id="button" type="submit">submit</button>
   </form>
+</main>
 </body>
 </html>
