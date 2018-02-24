@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 960px;
+  margin: 0 auto;
+  padding: 10px 30px 50px;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  color: #4a4a4a;
+}
+h1 {
+  font-size: 26px;
+  text-align: center;
+  text-decoration: underline;
+  margin: 25px 0 35px;
+}
+
+form {
+  width: 100%;
+}
+
+label{
+  display: block;
+  margin: 15px 0 10px;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 0.015em;
+}
+
+input, select, option{
+  display: block;
+  font-size: 22px;
+  padding-left: 1em;
+  margin-bottom: 100px;
+  width: 100%;
+  height: 50px;
+  background: none;
+  border-radius: 0;
+  border: 1px solid #ccc;
+  letter-spacing: 0.015em;
+}
+
+button {
+  font-size: 22px;
+  height: 50px;
+  padding: 0 30px;
+  background: #d8d8d8;
+  color: #4a4a4a;
+  border: none;
+}
+
+button:hover,
+button:focus {
+  background: #4a4a4a;
+  color: #fff;
+}
+
+form input.use-sprite,
+form button.use-sprite {
+  display: none;
+}
+
+form label div{
+  width: 58px;
+  height: 58px;
+  background-image: url('../form-elements-sprite.png');
+  background-size: 500px;
+  background-position: -55px -82px;
+}
+form input#checkbox:checked + label div{
+  background-position-x: -131px;
+}
+
+form label[for="radio"] div{
+  background-position-x: -200px;
+}
+
+form input#radio:checked + label div{
+  background-position-x: -280px;
+}
+
+form label.use-sprite {
+  margin-bottom: 70px;
+}

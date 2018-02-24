@@ -4,17 +4,18 @@
   <meta charset="UTF-8">
   <title>Jennifer Williams Piper UI Challenge 2</title>
   <link rel="stylesheet" href="styles/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
   <h1>UI Challenge - Custom Form Elements</h1>
   <form action="">
-    <label for="text-input"></label>
-    <input type="text" placeholder="placeholder text">text input
+    <label for="text-input">text input</label>
+    <input type="text" placeholder="placeholder text">
 
-    <label for="select-box"></label>
+    <label for="select-box">select box</label>
     <select name="select-box" id="select-box">
-        <option value="placeholder">please select an option...</option>
+        <option class=default value="placeholder">please select an option...</option>
       <option value="option1">option 1</option>
       <option value="option2">option 2</option>
       <option value="option3">option 3</option>
@@ -22,13 +23,16 @@
       <option value="option5">option 5</option>
     </select>
 
-    <label for="checkbox">checkbox</label>
-<input id="checkbox" type="checkbox">
 
-<label for="radio">radio</label>
-<input type="radio">
+<label>checkbox</label>
+<input id="checkbox"  class="use-sprite" type="checkbox">
+<label for="checkbox" class="use-sprite"><div></div></label>
 
-<label for="button">button</label>
+<label>radio</label>
+<input id="radio" class="use-sprite" type="radio">
+<label for="radio" class="use-sprite"><div></div></label>
+
+<label>button</label>
 <button id="button">submit</button>
   </form>
 </body>
